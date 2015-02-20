@@ -1,1 +1,1 @@
-# sep-scala-study
+# scala-first-study
