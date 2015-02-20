@@ -1,4 +1,4 @@
-name := "sep-scala-study"
+name := "scala-first-study"
 
 version := "1.0"
 
