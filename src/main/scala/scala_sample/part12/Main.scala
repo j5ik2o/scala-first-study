@@ -1,5 +1,8 @@
 package scala_sample.part12
 
+
+// パータンマッチ(unapply)で属性にアクセスする方法
+
 case class Task(name: String)
 
 sealed trait Worker {

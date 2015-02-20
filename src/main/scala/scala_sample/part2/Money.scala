@@ -3,7 +3,8 @@ package scala_sample.part2
 import java.util.Currency
 
 // case class導入
-case class Money(currency: Currency, amount: BigDecimal)
+case class Money(currency: Currency,
+                 amount: BigDecimal)
 
 object Money {
 

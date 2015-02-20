@@ -3,7 +3,8 @@ package scala_sample.part0
 import java.util.Currency
 
 // クラス定義
-class Money(val currency: Currency, val amount: BigDecimal)
+class Money(val currency: Currency,
+            val amount: BigDecimal)
 
 object Part0Main extends App {
 

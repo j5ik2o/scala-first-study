@@ -3,10 +3,13 @@ package scala_sample.part4
 import java.util.{Locale, Currency}
 
 // 補助コンストラクタ定義
-case class Money(currency: Currency, amount: BigDecimal) {
+case class Money(currency: Currency,
+                 amount: BigDecimal) {
 
   // 補助コンストラクタ
-  def this(amount: BigDecimal) = this(Currency.getInstance(Locale.getDefault), amount)
+  def this(amount: BigDecimal) =
+    this(Currency.getInstance(Locale.getDefault),
+      amount)
 
   def plus(other: Money): Money = {
     require(currency == other.currency)

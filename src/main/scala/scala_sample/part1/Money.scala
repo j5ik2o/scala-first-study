@@ -3,10 +3,13 @@ package scala_sample.part1
 import java.util.Currency
 
 // 値オブジェクト化
-class Money(val currency: Currency, val amount: BigDecimal) {
+class Money(val currency: Currency,
+            val amount: BigDecimal) {
 
   override def equals(obj: scala.Any): Boolean = obj match {
-    case that: Money => amount == that.amount && currency == that.currency
+    case that: Money =>
+      amount == that.amount &&
+        currency == that.currency
     case _ => false
   }
 

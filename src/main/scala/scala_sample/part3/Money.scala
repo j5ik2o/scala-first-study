@@ -3,7 +3,8 @@ package scala_sample.part3
 import java.util.Currency
 
 // メソッド追加
-case class Money(currency: Currency, amount: BigDecimal) {
+case class Money(currency: Currency,
+                 amount: BigDecimal) {
   
   def plus(other: Money): Money = {
     require(currency == other.currency)
