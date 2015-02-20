@@ -43,7 +43,7 @@ object Main extends App {
     PersonRepository.toSeq.foreach(println)
 
     {
-      // Option型の使いた
+      // Option型の使いかた
       val personOpt = PersonRepository.findById(2)
       if (personOpt.isDefined) {
         println(personOpt.get)
